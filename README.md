@@ -17,7 +17,7 @@ El sistema consta de tres componentes principales:
 2.  **Logger (Backend):** Una API silenciosa en PHP que procesa y almacena los datos de forma asíncrona en MySQL.
 3.  **Command Dashboard:** Una interfaz gráfica segura basada en Bootstrap 5 para la visualización, filtrado y análisis de los vectores capturados.
 
-## 🛠️- [Guía de Despliegue](guia.md)
+## 🛠️- [Guía de Despliegue](Guía.md)
 
 ### 🕵️ Motor de Captura
 *   **Device Fingerprinting:** Identificación precisa de S.O. (Windows/Linux/Android/iOS), arquitectura y modelo de dispositivo móvil.
